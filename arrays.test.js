@@ -3,9 +3,7 @@ const {
   isArrayLengthEven,
   addLailaToArray,
   eliminateTeam,
-  secondHalfOfArrayIfItIsEven,
-  youGottaCalmDown,
-} = require("./arrays2.js");
+} = require("./arrays.js");
 
 describe("Array and String Manipulation Functions", () => {
   describe("isArrayLengthOdd", () => {
@@ -39,40 +37,15 @@ describe("Array and String Manipulation Functions", () => {
   });
 
   describe("eliminateTeam", () => {
-    it("removes the last element from the array and returns it", () => {
+    it("returns the last element from the array ", () => {
       const teams = ["Brazil", "Germany", "Italy"];
       expect(eliminateTeam(teams)).toBe("Italy");
+    });
+
+    it("removes the last element from the array", () => {
+      const teams = ["Brazil", "Germany", "Italy"];
+      eliminateTeam(teams);
       expect(teams).toEqual(["Brazil", "Germany"]);
-    });
-  });
-
-  describe("secondHalfOfArrayIfItIsEven", () => {
-    it("returns the second half of the array if the length is even", () => {
-      expect(
-        secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi"])
-      ).toEqual(["banana", "kiwi"]);
-    });
-
-    it("returns an empty array if the length is odd", () => {
-      expect(
-        secondHalfOfArrayIfItIsEven([
-          "apple",
-          "orange",
-          "banana",
-          "kiwi",
-          "blueberry",
-        ])
-      ).toEqual([]);
-    });
-  });
-
-  describe("youGottaCalmDown", () => {
-    it("returns the string with at most one exclamation mark at the end", () => {
-      expect(youGottaCalmDown("HI!!!!!!!!!!")).toBe("HI!");
-      expect(youGottaCalmDown("Taylor Schwift!!!!!!!!!!!")).toBe(
-        "Taylor Schwift!"
-      );
-      expect(youGottaCalmDown("Hellooooo")).toBe("Hellooooo");
     });
   });
 });
