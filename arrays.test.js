@@ -28,6 +28,12 @@ describe("Array and String Manipulation Functions", () => {
 
   describe("addLailaToArray", () => {
     it('adds "Laila" to the end of the array', () => {
+      const instructors = ["Mshary", "Hasan"];
+      addLailaToArray(instructors);
+      expect(instructors).toEqual(["Mshary", "Hasan", "Laila"]);
+    });
+
+    it("returns the modified array", () => {
       expect(addLailaToArray(["Mshary", "Hasan"])).toEqual([
         "Mshary",
         "Hasan",
