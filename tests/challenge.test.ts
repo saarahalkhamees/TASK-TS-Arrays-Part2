@@ -1,9 +1,6 @@
-const { secondHalfOfArrayIfItIsEven, youGottaCalmDown } = require("./arrays");
+import { secondHalfOfArrayIfItIsEven, youGottaCalmDown } from "../challenge";
 
-/**
- * Remove the "x" from "xdescribe" 👇🏼
- */
-xdescribe("🌶️ Challenges", () => {
+describe("🌶️ Challenges", () => {
   describe("🌶️ secondHalfOfArrayIfItIsEven", () => {
     it("returns the second half of the array if the length is even", () => {
       expect(

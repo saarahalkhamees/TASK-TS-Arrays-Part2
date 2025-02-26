@@ -1,9 +1,9 @@
-const {
-  isArrayLengthOdd,
-  isArrayLengthEven,
+import {
   addLailaToArray,
   eliminateTeam,
-} = require("./arrays.js");
+  isArrayLengthEven,
+  isArrayLengthOdd,
+} from "../arrays";
 
 describe("Array and String Manipulation Functions", () => {
   describe("isArrayLengthOdd", () => {
