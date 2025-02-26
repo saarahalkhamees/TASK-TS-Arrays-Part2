@@ -1,4 +1,4 @@
-# JS-Arrays-Part2
+# TS-Arrays-Part2
 
 ## Instructions
 
