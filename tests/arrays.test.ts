@@ -5,7 +5,7 @@ import {
   isArrayLengthOdd,
 } from "../arrays";
 
-describe("Array and String Manipulation Functions", () => {
+describe("Array Manipulation Functions", () => {
   describe("isArrayLengthOdd", () => {
     it("returns true if the array length is odd", () => {
       expect(isArrayLengthOdd([1, 2, 3])).toBe(true);
