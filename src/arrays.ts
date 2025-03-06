@@ -9,7 +9,7 @@
  * isArrayLengthOdd([1, 2, 3, 4]); // => false (the array contains 4 elements, 4 is even, we return false)
  */
 
-function isArrayLengthOdd(numbers: []): boolean {
+function isArrayLengthOdd(numbers: number[]): boolean {
   // Your code here
 
   return false; // replace false with what you see is fit
@@ -57,7 +57,7 @@ function addLailaToArray(instructors: string[]): string[] {
 function eliminateTeam(teams: string[]): string {
   // Your code here
 
-  return ""; // replace empty string with what you see is fit 
+  return ""; // replace empty string with what you see is fit
 }
 
 export { isArrayLengthOdd, isArrayLengthEven, addLailaToArray, eliminateTeam };
