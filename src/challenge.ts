@@ -14,9 +14,12 @@
  */
 function secondHalfOfArrayIfItIsEven(fruits: string[]): string[] {
   // Your code here
-
-  return []; // replace empty array with what you see is fit
-}
+  if (fruits.length % 2 === 0) {
+    const half = fruits.length / 2;
+    return fruits.slice(half); // return from middle to end
+  }
+  return [];
+} // replace empty array with what you see is fit
 
 /**
  * youGottaCalmDown(shout):
